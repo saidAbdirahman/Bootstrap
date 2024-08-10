@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('student_profiles', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('student_id');
+            $table->string('country');
             $table->timestamps();
         });
     }
